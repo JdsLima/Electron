@@ -1,0 +1,48 @@
+.toolbar {
+    background-color: rgb(7, 58, 58);
+    background-image: -webkit-linear-gradient(top, #303031  0%, #252526 100%);
+    background-image: linear-gradient(to bottom, #303031  0%, #323235 100%);
+}
+
+.nav-group-item {
+    color: rgb(255, 246, 246);
+}
+
+a.nav-group-item:hover{
+    background-color: #353536;
+  }
+  
+  a.nav-group-item:focus{
+    background-color: #444449;
+} 
+  
+.nav-group-item .icon {
+    color: #f1f4f7;
+}
+
+.nav-group-title {
+    color: #f8f8f8;
+}
+
+.sidebar {
+    background-color: #252526;
+}
+
+.pane {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+.form-control,
+.form-control2,
+.small-form-control {
+    background-color: #333232;;
+}
+
+table {
+    color: black;
+}
