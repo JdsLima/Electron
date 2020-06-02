@@ -36,7 +36,7 @@ If both commands printed a version number, you are all set! Before you get start
 # Installing Electron:
 
 Create a folder where you want to start the electron application and install electron
-> npm install --save-dev electron'
+> npm install --save-dev electron
 
 To enable electron live-reload:
 > npm install electron-reload
