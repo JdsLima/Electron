@@ -40,5 +40,5 @@ If both commands printed a version number, you are all set! Before you get start
 Clone and extract the repository in the folder where you installed electron.
 
 With everything ready just start the application with:
-'npm start' 
+> npm start 
 
