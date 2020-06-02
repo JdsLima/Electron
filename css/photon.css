@@ -346,17 +346,9 @@ h6 {
   padding-left: 20px;
 }
 
-.btn-exit {
+.btn-options {
   color: white;
-  border-top-color: #000000;
-  border-right-color:  #000000;
-  border-bottom-color: #000000;
-  border-left-color:  #000000;
-  background-color: #54c214fd;
-}
-
-.btn-exit:active {
-  background-color: #439414fd;
+  background-color: transparent;
 }
 
 .btn-default {

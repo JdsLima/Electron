@@ -1,7 +1,7 @@
 .toolbar {
     background-color: rgb(7, 58, 58);
     background-image: -webkit-linear-gradient(top, #303031  0%, #252526 100%);
-    background-image: linear-gradient(to bottom, #303031  0%, #323235 100%);
+    background-image: linear-gradient(to bottom, #323235  0%, #252526 100%);
 }
 
 .nav-group-item {
