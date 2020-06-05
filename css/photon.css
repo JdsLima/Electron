@@ -600,18 +600,6 @@ input[type="checkbox"] {
   border-radius: 4px;
   outline: none;
 }
-.form-control2 {
-  display: inline-block;
-  width: 20%;
-  min-height: 25px;
-  padding: 5px 10px;
-  font-size: 13px;
-  line-height: 1.6;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  outline: none;
-}
 
 .small-form-control{
   display: inline-block;
@@ -625,7 +613,8 @@ input[type="checkbox"] {
   border-radius: 4px;
   outline: none;
 }
-.form-control2:focus, .form-control:focus, .small-form-control:focus {
+
+.form-control:focus, .small-form-control:focus {
   border-color: #6db3fd;
   box-shadow: 2px 2px 0 #6db3fd, -2px -2px 0 #6db3fd, -2px 2px 0 #6db3fd, 2px -2px 0 #6db3fd;
 }
