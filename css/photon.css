@@ -351,6 +351,40 @@ h6 {
   background-color: transparent;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  right: 0;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  border-radius: 4px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .btn-options {
+  background-color: #3e8e41;
+}
+
 .btn-default {
   color: #333;
   border-top-color: #c2c0c2;
@@ -448,12 +482,6 @@ h6 {
 
 .btn .icon-text {
   margin-right: 5px;
-}
-
-.btn-dropdown:after {
-  font-family: "photon-entypo";
-  margin-left: 5px;
-  content: "";
 }
 
 .btn-group {
