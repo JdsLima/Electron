@@ -85,6 +85,11 @@ textarea {
   margin: 0;
 }
 
+input[type="file"] {
+  width: auto;
+  display: block;
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -296,10 +301,6 @@ h6 {
   padding-bottom: 20px;
 }
 
-.sidebar {
-  background-color: #f5f5f4;
-}
-
 .draggable {
   -webkit-app-region: drag;
 }
@@ -314,7 +315,7 @@ h6 {
 
 .btn {
   display: inline-block;
-  padding: 3px 5px;
+  padding: 1px 5px;
   margin-bottom: 0;
   font-size: 15px;
   line-height: 1.4;
@@ -347,7 +348,7 @@ h6 {
 }
 
 .btn-options {
-  color: white;
+  color: rgb(14, 4, 27);
   background-color: transparent;
 }
 
@@ -359,7 +360,7 @@ h6 {
 .dropdown-content {
   display: none;
   right: 0;
-  border-radius: 4px;
+  border-radius: 3px;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
@@ -620,12 +621,13 @@ input[type="checkbox"] {
   display: inline-block;
   width: 75%;
   min-height: 25px;
+  max-width: 100%;
   padding: 5px 10px;
   font-size: 13px;
   line-height: 1.6;
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 6px;
   outline: none;
 }
 
@@ -693,6 +695,15 @@ textarea {
   left: 0;
   display: flex;
 }
+.section-pane {
+  background-color: rgba(144, 230, 215, 0.836);
+  float: left;
+  border-radius: 10px;
+  padding: 15px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.699);
+}
 
 .pane {
   position: relative;
@@ -709,6 +720,7 @@ textarea {
 .pane-sm {
   max-width: 220px;
   min-width: 150px;
+  background-color: #f5f5f4;
 }
 
 .pane-mini {
@@ -734,7 +746,7 @@ img {
 }
 
 .img-rounded {
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .list-group {
@@ -788,6 +800,8 @@ img {
   font-size: 14px;
 }
 
+.nav-group a:hover{background-color: #dbeaf1; }
+
 .nav-group-item {
   padding: 2px 10px 2px 25px;
   display: block;
@@ -797,13 +811,8 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-a.nav-group-item:hover{
-  background-color: #dbeaf1;
-}
 
-a.nav-group-item:focus{
-  background-color: #c9cbcc;
-} 
+/* a.nav-group-item:focus, a.nav-group-item:active { background-color: #c9cbcc; }  */
 
 .nav-group-item .icon {
   width: 19px;
@@ -2268,6 +2277,7 @@ a.nav-group-item:focus{
 /* '' */
 table {
   width: 100%;
+  margin-top: 2rem;
   border: 0;
   border-collapse: separate;
   font-size: 12px;

@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html>
-<!-- funçoes para alternar entre paineis sem recarregar td a página html -->
-<script src="javascript/angularMin.js"></script>
-<script src="javascript/angular-router.js"></script>
 
 <head>
   <title>Minha Loja</title>
+  <!-- funçoes para alternar entre paineis sem recarregar td a página html -->
+  <script src="javascript/angularMin.js"></script>
+  <script src="javascript/angular-router.js"></script>
 
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/photon.css">
-
-  <!-- Descomente a linha de baixo para utilizar o layout dark -->
-  <!-- <link rel="stylesheet" href="css/dark.css"> -->
 
 </head>
 
@@ -21,18 +17,25 @@
       <div class="toolbar-actions">
         <div class="dropdown" style="float: right;">
           <button class="btn btn-options" id="Opções">
+            User
             <img class="img-circle media-object pull-left" src="docs/assets/img/avatar3.jpg" width="30" height="30">
           </button>
           <div class="dropdown-content">
             <a href="#"><span class="icon icon-adjust"></span> Tema escuro</a>
-            <a href="#">Sair com segurança</a>
+            <a href="#"><span class="icon icon-cog"></span> Preferências</a>
+            <a href="#" style="background-color: rgb(3, 185, 3); color: #fff;">Sair com segurança</a>
           </div>
         </div>
       </div>
     </header>
     <div class="window-content">
       <div class="pane-group">
-        <div class="pane-sm sidebar">
+        <div class="pane-sm">
+          <ul class="list-group">
+            <li class="list-group-header">
+              <input class="form-control" style="width: 100%;" id="procurar" type="text" placeholder="Procure por algo">
+            </li>
+          </ul>
           <nav class="nav-group">
             <h5 class="nav-group-title">Opções</h5>
             <a href="#!cadastro" class="nav-group-item" id="Cadastro">
@@ -61,9 +64,7 @@
             </a>
           </nav>
           <ul class="list-group">
-            <li class="list-group-header">
-              <input class="form-control" style="width: 100%;" id="procurar" type="text" placeholder="Procure por algo">
-            </li>
+            <li class="list-group-header"></li>
             <li class="list-group-item">
               <img class="img-circle media-object pull-left" src="docs/assets/img/avatar.jpg" width="32" height="32">
               <div class="media-body">
@@ -84,7 +85,7 @@
       </div>
     </div>
   </div>
+  <script src="javascript/telas.js"></script>
 </body>
-<script src="javascript/telas.js"></script>
 
 </html>

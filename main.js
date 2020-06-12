@@ -20,8 +20,6 @@ function createWindow() {
 
   // configuraçoes da janela
   win.removeMenu()
-  win.once("ready-to-show", ()=> {
-     win.show(); })
      
   //abre a ferramenta de desenvolvedor
   //win.webContents.openDevTools()

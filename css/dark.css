@@ -4,6 +4,9 @@
     background-image: linear-gradient(to bottom, #323235  0%, #252526 100%);
 }
 
+.nav-group {
+    background-color: #252526;
+}
 .nav-group-item {
     color: rgb(255, 246, 246);
 }
@@ -24,10 +27,6 @@ a.nav-group-item:hover{
     color: #f8f8f8;
 }
 
-.sidebar {
-    background-color: #252526;
-}
-
 .pane {
     background-color: #1e1e1e;
     color: white;
@@ -46,3 +45,11 @@ h1, h2, h3, h4, h5, h6 {
 table {
     color: black;
 }
+.pane {
+    border-left: 1px solid #333232;
+
+}
+
+pane-sm {
+    background-color: #333232;
+  }
