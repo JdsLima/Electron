@@ -2,10 +2,31 @@
 <html>
 
 <head>
-  <title>Minha Loja</title>
+  <title>Sorveteria Vitória</title>
+  <meta name="description" content="Sistema para sorveteria">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Jadson Lima">
   <!-- funçoes para alternar entre paineis sem recarregar td a página html -->
   <script src="javascript/angularMin.js"></script>
   <script src="javascript/angular-router.js"></script>
+  <!-- Ativando jquery e mascaras -->
+  <script>window.$ = window.jQuery = require('jquery');</script>
+  <script src="javascript/jquery.mask.min.js"></script>
+
+  <!-- mascaras -->
+
+  <script>
+    function Mask(){
+      console.log("mascara ativada");
+      $("#cpf").mask("000.000.000-00");
+      $("#telefone").mask("(00) 00000-0000");
+      $("#Porcentagem").mask("000%", {reverse: true});
+      $("#nomeFunc").change(function () {
+        console.log("maiusculo");
+        $(this).val($(this).val().toUpperCase());
+    });
+    }
+  </script>
 
   <link rel="stylesheet" href="css/photon.css">
 
@@ -15,13 +36,15 @@
   <div class="window">
     <header class="toolbar">
       <div class="toolbar-actions">
+        <div style="float: left;">
+          <img class="logo" src="docs/assets/img/Logo/Logo.png">
+        </div>
         <div class="dropdown" style="float: right;">
-          <button class="btn btn-options" id="Opções">
+          <button class="btn btn-options" style="color: cornsilk;" id="Opções">
             User
             <img class="img-circle media-object pull-left" src="docs/assets/img/avatar3.jpg" width="30" height="30">
           </button>
           <div class="dropdown-content">
-            <a href="#"><span class="icon icon-adjust"></span> Tema escuro</a>
             <a href="#"><span class="icon icon-cog"></span> Preferências</a>
             <a href="#" style="background-color: rgb(3, 185, 3); color: #fff;">Sair com segurança</a>
           </div>
@@ -31,13 +54,8 @@
     <div class="window-content">
       <div class="pane-group">
         <div class="pane-sm">
-          <ul class="list-group">
-            <li class="list-group-header">
-              <input class="form-control" style="width: 100%;" id="procurar" type="text" placeholder="Procure por algo">
-            </li>
-          </ul>
           <nav class="nav-group">
-            <h5 class="nav-group-title">Opções</h5>
+            <h5 class="nav-group-title"></h5>
             <a href="#!cadastro" class="nav-group-item" id="Cadastro">
               <span class="icon icon-user-add"></span>
               Cadastrar Funcionários
@@ -49,6 +67,14 @@
             <a href="#!listarProd" class="nav-group-item" id="ListProd">
               <span class="icon icon-doc-text"></span>
               Listar produtos
+            </a>
+            <a href="#!despacharFuncionario" class="nav-group-item" id="despacharFuncionario">
+              <span class="icon icon-user"></span>
+              Despachar Funcionario
+            </a>
+            <a href="#!vendasNaSorveteria" class="nav-group-item" id="vendasNaSorveteria">
+              <span class="icon icon-home"></span>
+              Vendas na sorveteria
             </a>
             <a href="#!status" class="nav-group-item" id="Status">
               <span class="icon icon-retweet"></span>
@@ -63,23 +89,6 @@
               Remover funcionário
             </a>
           </nav>
-          <ul class="list-group">
-            <li class="list-group-header"></li>
-            <li class="list-group-item">
-              <img class="img-circle media-object pull-left" src="docs/assets/img/avatar.jpg" width="32" height="32">
-              <div class="media-body">
-                <strong>Funcionario1</strong>
-                <p>Detalhes</p>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <img class="img-circle media-object pull-left" src="docs/assets/img/avatar2.png" width="32" height="32">
-              <div class="media-body">
-                <strong>Funcionario2</strong>
-                <p>Detalhes</p>
-              </div>
-            </li>
-          </ul>
         </div>
         <div ng-view class="pane"></div>
       </div>

@@ -4,7 +4,7 @@
 <head>
   <style>
     a#RemoveFunc {
-      background-color: #c9cbcc;
+      background-color: #3f3f3f;
     }
   </style>
 </head>
@@ -13,7 +13,7 @@
   <div class="pane-group">
     <div class="pane">
       <form action=" ">
-        <h3>Remover Funcionários</h3>
+        <h3>Remover Funcionário</h3>
         <div class="form-group">
           <h5>Nome do Funcionário:</h1>
             <select class="form-control" style="width:20%;">
@@ -22,24 +22,25 @@
               <option>fulano2</option>
               <option>fulano3</option>
             </select>
-            <button type="submit" class="btn btn-large btn-primary" id="RemoverFunc">Remover</button>
+            <button style="margin-left: 8px;" type="submit" class="btn btn-large btn-primary" id="RemoverFunc">Remover</button>
         </div>
         <table class="table-striped">
           <thead>
             <tr>
               <th>Funcionário</th>
               <th>CPF</th>
-              <th>Vendas Totais</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>fulano</td>
               <td>111111111-11</td>
-              <td>28K</td>
             </tr>
           </tbody>
-        </table>
+        </table><br>
+        <div style="font-size: 15px;" id="msg">
+          teste: Funcionario Fulano removido com sucesso!
+        </div>
       </form>
     </div>
   </div>

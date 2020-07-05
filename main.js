@@ -11,6 +11,7 @@ function createWindow() {
   let win = new BrowserWindow({
     width: 900,
     height: 600,
+    icon: "docs/assets/img/Logo/Logo.png",
     webPreferences: {
       nodeIntegration: true
     }
@@ -22,6 +23,6 @@ function createWindow() {
   win.removeMenu()
      
   //abre a ferramenta de desenvolvedor
-  //win.webContents.openDevTools()
+  win.webContents.openDevTools()
 }
 app.whenReady().then(createWindow)

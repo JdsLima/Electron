@@ -1,12 +1,18 @@
 {
-  "name": "meu-primeiro-app",
-  "version": "0.0.1",
+  "name": "sorveteria",
+  "version": "1.0.1",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3"
   },
   "dependencies": {
     "electron": "^9.0.0",
-    "electron-reload": "^1.5.0"
+    "electron-reload": "^1.5.0",
+    "jquery": "^3.5.1",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.11.0"
   }
 }

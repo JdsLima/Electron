@@ -4,7 +4,7 @@
 <head>
   <style>
     a#Cadastro {
-      background-color: #c9cbcc;
+      background-color: #3f3f3f;
     }
   </style>
 </head>
@@ -16,15 +16,19 @@
         <h3>Cadastro de funcionários</h3>
         <section class="section-pane">
           <div class="form-group">
-            <input type="text" class="form-control" id="nome" placeholder="Nome">
+            <h5>Nome:</h5>
+            <input type="text" class="form-control" id="nomeFunc" placeholder="Nome" onclick="Mask()">
           </div>
           <div class="form-group">
-            <input type="text" maxlength="11" class="form-control" style="width: 20%;" id="cpf" placeholder="CPF">
+            <h5>CPF:</h5>
+            <input type="text" maxlength="11" class="form-control" style="width: 20%;" id="cpf" placeholder="CPF" onclick="Mask()">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" style="width: 20%;" id="telefone" placeholder="Telefone">
+            <h5>Telefone:</h5>
+            <input type="text" class="form-control" style="width: 20%;" id="telefone" placeholder="Telefone" onclick="Mask()">
           </div>
           <div class="form-group">
+            <h5>Endereço:</h5>
             <input type="text" class="form-control" id="endereco" placeholder="Endereço">
           </div>
           <div class="form-group">
@@ -36,7 +40,7 @@
             <input type="file" id="FuncImage">
           </div>
           <h5>Definir função:</h5>
-          <select class="form-control" style="width: 20%;">
+          <select class="form-control" style="width: 25%;">
             <option selected disabled>Selecione uma opção</option>
             <option>Vendedor</option>
             <option>Caixa</option>
