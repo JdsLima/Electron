@@ -6,33 +6,19 @@
   <meta name="description" content="Sistema para sorveteria">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="Jadson Lima">
+  <link rel="stylesheet" href="css/photon.css">
   <!-- funçoes para alternar entre paineis sem recarregar td a página html -->
   <script src="javascript/angularMin.js"></script>
   <script src="javascript/angular-router.js"></script>
+  <script src="javascript/telas.js"></script>
   <!-- Ativando jquery e mascaras -->
   <script>window.$ = window.jQuery = require('jquery');</script>
   <script src="javascript/jquery.mask.min.js"></script>
-
-  <!-- mascaras -->
-
-  <script>
-    function Mask(){
-      console.log("mascara ativada");
-      $("#cpf").mask("000.000.000-00");
-      $("#telefone").mask("(00) 00000-0000");
-      $("#Porcentagem").mask("000%", {reverse: true});
-      $("#nomeFunc").change(function () {
-        console.log("maiusculo");
-        $(this).val($(this).val().toUpperCase());
-    });
-    }
-  </script>
-
-  <link rel="stylesheet" href="css/photon.css">
-
+  <script src="javascript/scripts.js"></script>
+  <script src="./.db/server.js"></script>
 </head>
 
-<body ng-app="meuApp">
+<body>
   <div class="window">
     <header class="toolbar">
       <div class="toolbar-actions">
@@ -46,12 +32,13 @@
           </button>
           <div class="dropdown-content">
             <a href="#"><span class="icon icon-cog"></span> Preferências</a>
-            <a href="#" style="background-color: rgb(3, 185, 3); color: #fff;">Sair com segurança</a>
+            <a class="btn-sair" style="border-top-left-radius: 0px;" onclick="Sair()">Sair com
+              segurança</a>
           </div>
         </div>
       </div>
     </header>
-    <div class="window-content">
+    <div class="window-content" ng-app="meuApp">
       <div class="pane-group">
         <div class="pane-sm">
           <nav class="nav-group">
@@ -94,7 +81,6 @@
       </div>
     </div>
   </div>
-  <script src="javascript/telas.js"></script>
 </body>
 
 </html>

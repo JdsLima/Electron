@@ -13,7 +13,7 @@
   <div class="pane-group">
     <div class="pane">
       <h3>Lista dos produtos cadastrados</h3>
-      <table class="table-striped" style="margin: auto;">
+      <table class="table-striped" id="ListaProd" style="margin: auto;">
         <thead>
           <tr>
             <th>Nome</th>
@@ -22,42 +22,16 @@
             <th>Porcentagem de lucro</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>photon</td>
-            <td>R$ xx,xx</td>
-            <td>28K</td>
-            <td>80%</td>
-          </tr>
-          <tr>
-            <td>photon</td>
-            <td>R$ xx,xx</td>
-            <td>28K</td>
-            <td>60%</td>
-          </tr>
-          <tr style="text-align: center;">
-            <td>photon</td>
-            <td>R$ xx,xx</td>
-            <td>28K</td>
-            <td>20%</td>
-          </tr>
-          <tr style="text-align: center;">
-            <td>photon</td>
-            <td>R$ xx,xx</td>
-            <td>28K</td>
-            <td>85%</td>
-          </tr>
-        </tbody>
       </table>
       <br><br><br>
       <h3>Remover produto cadastrado</h3>
       <label style="font-size: 15px;">Selecione o produto: </label>
       <br>
-      <select class="form-control" style="width: 25%;" id="RemoveProdutos">
+      <select class="form-control" id="Section-Prod" style="width: 25%;" id="SelectProdutos">
         <option value="">Produto 1</option>
         <option value="">Produto 2</option>
       </select>
-      <button style="margin-left: 8px;" class="btn btn-large btn-primary" type="submit">Remover</button>
+      <button style="margin-left: 8px;" class="btn btn-large btn-primary" type="submit" id="RemoverProd">Remover</button>
     </div>
   </div>
 </body>

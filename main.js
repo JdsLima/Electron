@@ -13,7 +13,8 @@ function createWindow() {
     height: 600,
     icon: "docs/assets/img/Logo/Logo.png",
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      enableRemoteModule: true
     }
   })
   //carrega o index.html do aplicativo.
@@ -21,7 +22,6 @@ function createWindow() {
 
   // configuraçoes da janela
   win.removeMenu()
-     
   //abre a ferramenta de desenvolvedor
   win.webContents.openDevTools()
 }

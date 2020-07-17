@@ -10,54 +10,43 @@
 </head>
 
 <body>
-  <div class="pane-group">
-    <div class="pane">
-      <form action=" ">
-        <h3>Vendas na sorveteria</h3>
-        <section class="section-pane">
-          <h5>Produto:</h5>
-          <div class="form-group">
-            <select class="form-control" style="width: 25%;">
-              <option selected disabled>Selecione uma opção</option>
-              <option>Option one</option>
-              <option>Option two</option>
-              <option>Option three</option>
-              <option>Option four</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <h5>Quantidade:</h5>
-            Unidades: <input type="number" class="form-control" style="width: 10%;">
-            <button style="margin-left: 8px;" type="submit" class="btn btn-large btn-primary">Salvar</button>
-          </div>
-          <p></p>
-          <table class="table-striped" style="width: 90%;">
-            <thead>
-              <tr>
-                <th>Produto</th>
-                <th>Quantidade</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>photon.css</td>
-                <td>CSS</td>
-              </tr>
-            </tbody>
-          </table>
-          <h5>Valor total:</h5>
-          <div class="form-group" id="valReceb">
-            <label class="form-control" style="width: 18%;">R$</label>
-          </div>
-          <div class="form-actions">
-            <h5>Terminar tudo e salvar?</h5>
-            <button type="submit" class="btn btn-form btn-primary">Salvar</button>
-            <button type="submit" class="btn btn-form btn-default">Cancelar</button>
-          </div>
-        </section>
-      </form>
-    </div>
-  </div>
+  <form action=" ">
+    <section class="section-pane">
+      <h3>Vendas na sorveteria</h3>
+      <h5>Produto:</h5>
+      <div class="form-group">
+        <select class="form-control" style="width: 25%;" id="select-produtos">
+          <option selected disabled>Selecione uma opção</option>
+          <option>Option one</option>
+          <option>Option two</option>
+          <option>Option three</option>
+          <option>Option four</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h5>Quantidade:</h5>
+        Unidades: <input id="UniProd" type="number" class="form-control" style="width: 10%;">
+        <button style="margin-left: 8px;" type="submit" class="btn btn-large btn-primary"
+          onclick="addTableRow()">Salvar</button>
+      </div>
+      <p></p>
+      <table id="table-vendas" class="table-striped" style="width: 90%;">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+          </tr>
+        </thead>
+      </table>
+      <h5>Valor total:</h5>
+      <div class="form-group" id="valReceb">
+        <label class="form-control" style="width: 18%;">R$</label>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-form btn-primary">Terminar tudo e salvar</button>
+      </div>
+    </section>
+  </form>
 </body>
 
 </html>
