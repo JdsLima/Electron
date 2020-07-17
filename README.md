@@ -1,5 +1,5 @@
 # Electron
-Sistema de gestão para micro empresas
+Sistema de gestão Sorve
 
 #### To compile this project:
 
