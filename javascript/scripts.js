@@ -16,6 +16,7 @@ function addTableRow() {
         produtos = document.getElementById("select-produtos").value,
         quantidade = document.getElementById("UniProd").value;
     ce111.innerHTML = produtos; ce112.innerHTML = quantidade;
+    event.preventDefault();
 }
 
 function Sair() {

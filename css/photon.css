@@ -393,20 +393,31 @@ h6 {
 
 .dropdown-content a {
   color: white;
+  cursor: pointer;
   border-radius: 4px;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  transition: all .5s;
 }
 
-.dropdown-content a:hover {background-color: #727272}
+.dropdown-content a:hover {background-color: #727272; transition: all .4s;}
 
 .dropdown:hover .dropdown-content {
   display: block;
+  transition: all .4s;
+}
+
+#check {
+  display: none;
+}
+#check:checked {
+  background-color: #3f3f3f;
 }
 
 .dropdown:hover .btn-options {
   background-color: #3e8e41;
+  transition: all .5s;
 }
 
 .btn-default {
@@ -831,7 +842,7 @@ img {
 .nav-group a:hover{background-color: #333333; }
 
 .nav-group-item {
-  padding: 5px 10px 5px 25px;
+  padding: 10px 10px 10px 25px;
   display: block;
   color: white;
   text-decoration: none;
@@ -839,6 +850,7 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
+  border-bottom: 1px solid rgb(24, 24, 24);
 }
 
 /* a.nav-group-item:focus, a.nav-group-item:active { background-color: #c9cbcc; }  */

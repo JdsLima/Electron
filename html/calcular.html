@@ -1,75 +1,67 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <style>
-    a#Calcular {background-color: #3f3f3f;}
-  </style>
-</head>
-
-<body>
-  <div class="pane-group">
-    <div class="pane">
-      <form action=" ">
-        <h3>Cálculo da comissão</h3>
-        <div class="form-group">
-          <img class="img-rounded media-object" style="float: right; margin-right: 1rem;"
-            src="docs/assets/img/avatar.jpg" width="220" height="220">
-          <h5>Nome do Funcionário:</h5>
-          <select class="form-control" style="width: 20%;">
-            <option>fulano</option>
-            <option>fulano1</option>
-            <option>fulano2</option>
-            <option>fulano3</option>
-          </select>
-        </div>
-        <h5>Produto:</h5>
-        <div class="form-group">
-          <select class="form-control" style="width: 20%;">
-            <option selected disabled>Selecione uma opção</option>
-            <option>Option one</option>
-            <option>Option two</option>
-            <option>Option three</option>
-            <option>Option four</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <h5>Quantidade:</h5>
-          Produtos: <input type="number" class="form-control" style="width: 10%;">
-          Vendas: <input type="number" class="form-control" style="width: 10%;">
-          <button style="margin-left: 8px;" type="submit" class="btn btn-large btn-primary">Salvar</button>
-        </div>
-        <p></p>
-        <table class="table-striped">
-          <thead>
-            <tr>
-              <th>Produto</th>
-              <th>Quantidade</th>
-              <th>Retorno</th>
-              <th>Vendas</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>photon.css</td>
-              <td>CSS</td>
-              <td>28K</td>
-              <td>25k</td>
-            </tr>
-          </tbody>
-        </table>
-        <h5>Valor a receber do fucionário:</h5>
-        <div class="form-group" id="valReceb">
-          <label class="form-control" style="width: 18%;">R$</label>
-        </div>
-        <div class="form-actions">
-          <h5>Terminar tudo e salvar?</h5>
-          <button type="submit" class="btn btn-form btn-primary">Salvar</button>
-          <button type="submit" class="btn btn-form btn-default">Cancelar</button>
-        </div>
-      </form>
-    </div>
+<style>
+  a#Calcular {
+    background-color: #3f3f3f;
+  }
+</style>
+<div class="pane-group">
+  <div class="pane">
+    <form action=" ">
+      <h3>Cálculo da comissão</h3>
+      <div class="form-group">
+        <img class="img-rounded media-object" style="float: right; margin-right: 1rem;" src="docs/assets/img/avatar.jpg"
+          width="220" height="220">
+        <h5>Nome do Funcionário:</h5>
+        <select class="form-control" style="width: 20%;">
+          <option selected disabled>Selecione uma opção</option>
+          <option>fulano</option>
+          <option>fulano1</option>
+          <option>fulano2</option>
+          <option>fulano3</option>
+        </select>
+      </div>
+      <h5>Produto:</h5>
+      <div class="form-group">
+        <select class="form-control" style="width: 20%;">
+          <option selected disabled>Selecione uma opção</option>
+          <option>Option one</option>
+          <option>Option two</option>
+          <option>Option three</option>
+          <option>Option four</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h5>Quantidade:</h5>
+        Produtos: <input type="number" class="form-control" style="width: 10%;">
+        Vendas: <input type="number" class="form-control" style="width: 10%;">
+        <button style="margin-left: 8px;" type="submit" class="btn btn-large btn-primary">Salvar</button>
+      </div>
+      <p></p>
+      <table class="table-striped">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Retornou</th>
+            <th>Vendeu</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>photon.css</td>
+            <td>CSS</td>
+            <td>28K</td>
+            <td>25k</td>
+          </tr>
+        </tbody>
+      </table>
+      <h5>Valor a receber do fucionário:</h5>
+      <div class="form-group" id="valReceb">
+        <label class="form-control" style="width: 18%;"><span>%</span></label>
+      </div>
+      <div class="form-actions">
+        <h5>Terminar tudo e salvar?</h5>
+        <button type="submit" class="btn btn-form btn-primary">Salvar</button>
+        <button type="submit" class="btn btn-form btn-default">Cancelar</button>
+      </div>
+    </form>
   </div>
-</body>
-
-</html>
