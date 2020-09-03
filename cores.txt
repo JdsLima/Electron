@@ -1,0 +1,28 @@
+NOVAS CORES:
+
+cores do pane:
+
+antiga: #333333
+nova: #0e1621
+
+cores da sidebar:
+
+antiga: #242424
+novo: #17212b
+
+cores do botao active:
+
+antiga: #333333
+nova: #202b36
+
+cores do botao hover:
+antiga: #3f3f3f
+nova: #2b5278
+
+cores do header:
+antiga:
+	final: #252525
+	do começo: #434343
+nova:
+	final: #242f3d
+	do começo: #17212b

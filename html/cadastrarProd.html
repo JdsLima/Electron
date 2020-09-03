@@ -1,40 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        a#CadProd{background-color: #3f3f3f;}
-    </style>
-</head>
-<body>
-    <div class="pane-group">
-        <div class="pane">
-            <form action=" ">
-                <section class="section-pane">
-                    <h3>Cadastro de Produtos</h3>
-                    <div class="form-group">
-                        <h5>Nome do produto:</h5>
-                        <input type="text" class="form-control" id="nomeProduto" placeholder="Nome do Produto">
-                    </div>
-                    <div class="form-group">
-                        <h5>Valor de compra:</h5><input type="number" class="small-form-control" id="ValorCompra">
-                        Valor em reais
-                    </div>
-                    <div class="form-group">
-                        <h5>Valor de revenda:</h5><input type="number" class="small-form-control" id="ValorVenda">
-                        Valor em reais
-                    </div>
-                    <div class="form-group">
-                        <h5>Porcentagem de lucro:</h5><input type="text" class="small-form-control" id="Porcentagem" onclick="Mask()">
-                        Valor em %
-                    </div>
-                    <div class="form-actions">
-                        <h5>Cadastrar novo produto?</h5>
-                        <button type="submit" id="SaveProd" class="btn btn-form btn-primary">Salvar Produto</button>
-                    </div>
-                </section>
-            </form>
-        </div>
-    </div>
-</body>
+<style>
+    a#CadProd {
+        background-color: #202b36;
+    }
+</style>
 
-</html>
+<form action=" ">
+    <section class="section-pane">
+        <h3>Cadastro de Produtos</h3>
+        <div class="form-group">
+            <h5>Nome do produto:</h5>
+            <input type="text" class="form-control" style="text-transform: capitalize;" id="nomeProduto"
+                placeholder="Nome do Produto">
+        </div>
+        <div class="form-group">
+            <h5>Valor de compra:</h5><input type="number" class="small-form-control" id="ValorCompra"> Valor em reais
+        </div>
+        <div class="form-group">
+            <h5>Valor de revenda:</h5><input type="number" class="small-form-control" id="ValorVenda"> Valor em reais
+        </div>
+        <div class="form-group">
+            <h5>Porcentagem de lucro:</h5><input type="text" class="small-form-control" id="Porcentagem"
+                onclick="Mask()"> Valor em %
+        </div>
+        <div class="form-actions">
+            <h5>Cadastrar novo produto?</h5>
+            <button type="submit" id="SaveProd" class="btn btn-form btn-primary" onclick="CadProd()">Salvar
+                Produto</button>
+        </div>
+        <div id="msg"></div>
+    </section>
+</form>

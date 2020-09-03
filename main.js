@@ -8,21 +8,19 @@ require('electron-reload')(__dirname, {
 
 function createWindow() {
   // Cria uma janela de navegação.
-  let win = new BrowserWindow({
-    width: 900,
-    height: 600,
-    icon: "docs/assets/img/Logo/Logo.png",
+  let win = new BrowserWindow({frame: false, width: 1080, height: 720,
+    icon: "docs/assets/img/Logo/Logo.jpeg",
     webPreferences: {
       nodeIntegration: true,
       enableRemoteModule: true
     }
   })
   //carrega o index.html do aplicativo.
-  win.loadFile('index.html')
+  win.loadFile('index.html');
 
   // configuraçoes da janela
-  win.removeMenu()
+  win.removeMenu();
   //abre a ferramenta de desenvolvedor
-  win.webContents.openDevTools()
+  win.webContents.openDevTools();
 }
 app.whenReady().then(createWindow)

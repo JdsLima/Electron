@@ -1,66 +1,55 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <style>
-    a#despacharFuncionario {background-color: #3f3f3f;}
-  </style>
-</head>
-
-<body>
-  <div class="pane-group">
-    <div class="pane">
-      <form action=" ">
-        <h3>Despachar Funcionário</h3>
-        <div class="form-group">
-          <img class="img-rounded media-object" style="float: right; margin-right: 1rem;"
-            src="docs/assets/img/avatar.jpg" width="220" height="220">
-          <h5>Nome do Funcionário:</h5>
-          <select class="form-control" style="width: 20%;">
+<style>
+    a#despacharFuncionario {
+        background-color: #202b36;
+    }
+</style>
+<form action=" ">
+    <h3>Despachar Funcionário</h3>
+    <div class="form-group">
+        <img class="img-rounded media-object" style="float: right; margin-right: 1rem;" src="docs/assets/img/avatar.jpg"
+            width="220" height="220">
+        <h5>Nome do Funcionário:</h5>
+        <select class="form-control" style="width: 20%;">
+            <option selected disabled>Selecione uma opção</option>
             <option>fulano</option>
             <option>fulano1</option>
             <option>fulano2</option>
             <option>fulano3</option>
-          </select>
-        </div>
-        <h5>Produto:</h5>
-        <div class="form-group">
-          <select class="form-control" style="width: 20%;">
+        </select>
+    </div>
+    <h5>Produto:</h5>
+    <div class="form-group">
+        <select class="form-control" style="width: 20%;">
             <option selected disabled>Selecione uma opção</option>
             <option>Option one</option>
             <option>Option two</option>
             <option>Option three</option>
             <option>Option four</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <h5>Quantidade:</h5>
-          Unidades: <input type="number" class="form-control" style="width: 10%;">
-          <button style="margin-left: 8px;" type="submit" class="btn btn-large btn-primary">Salvar</button>
-        </div>
-        <p></p>
-        <table class="table-striped" style="width: 50%;">
-          <thead>
-            <tr>
-              <th>Produto</th>
-              <th>Quantidade</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>photon.css</td>
-              <td>CSS</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="form-actions">
-          <h5>Terminar tudo e salvar?</h5>
-          <button type="submit" class="btn btn-form btn-primary">Salvar</button>
-          <button type="submit" class="btn btn-form btn-default">Cancelar</button>
-        </div>
-      </form>
+        </select>
     </div>
-  </div>
-</body>
-
-</html>
+    <div class="form-group">
+        <h5>Quantidade:</h5>
+        Unidades: <input type="number" class="form-control" style="width: 10%;">
+        <button style="margin-left: 8px;" type="submit" class="btn btn-large btn-primary">Salvar</button>
+    </div>
+    <p></p>
+    <table class="table-striped" style="width: 50%;">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>photon.css</td>
+                <td>CSS</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="form-actions">
+        <h5>Terminar tudo e salvar?</h5>
+        <button type="submit" class="btn btn-form btn-primary">Salvar</button>
+        <button type="submit" class="btn btn-form btn-default">Cancelar</button>
+    </div>
+</form>

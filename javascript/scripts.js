@@ -18,6 +18,26 @@ function addTableRow() {
     ce111.innerHTML = produtos; ce112.innerHTML = quantidade;
 }
 
+function Minimizar(){
+    const app = require('electron').remote.app;
+    const { remote } = require('electron');
+    remote.BrowserWindow.getFocusedWindow().minimize(); 
+}
+
+function Maximizar(){
+    const app = require('electron').remote.app;
+    const { remote } = require('electron');
+    if (remote.BrowserWindow.getFocusedWindow().isMaximized()) {
+        remote.BrowserWindow.getFocusedWindow().restore();
+        img = document.getElementById("MAXIMIZAR");
+        img.src = "docs/assets/img/maximizar semfundo1.png";
+    }else{
+        remote.BrowserWindow.getFocusedWindow().maximize();
+        img = document.getElementById("MAXIMIZAR");
+        img.src = "docs/assets/img/maximizar semfundo.png";
+    }
+}
+
 function Sair() {
     const app = require('electron').remote.app;
     const { remote } = require('electron');

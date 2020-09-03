@@ -1,39 +1,26 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <style>
+<style>
     a#ListProd {
-      background-color: #3f3f3f;
+        background-color: #202b36;
     }
-  </style>
-</head>
+</style>
 
-<body>
-  <div class="pane-group">
-    <div class="pane">
-      <h3>Lista dos produtos cadastrados</h3>
-      <table class="table-striped" id="ListaProd" style="margin: auto;">
-        <thead>
-          <tr>
+<h3>Lista dos produtos cadastrados</h3>
+<table class="table-striped" id="ListaProd" style="margin: auto;">
+    <thead>
+        <tr>
             <th>Nome</th>
             <th>Preço</th>
             <th>Valor de Revenda</th>
             <th>Porcentagem de lucro</th>
-          </tr>
-        </thead>
-      </table>
-      <br><br><br>
-      <h3>Remover produto cadastrado</h3>
-      <label style="font-size: 15px;">Selecione o produto: </label>
-      <br>
-      <select class="form-control" id="Section-Prod" style="width: 25%;" id="SelectProdutos">
-        <option value="">Produto 1</option>
-        <option value="">Produto 2</option>
-      </select>
-      <button style="margin-left: 8px;" class="btn btn-large btn-primary" type="submit" id="RemoverProd">Remover</button>
-    </div>
-  </div>
-</body>
-
-</html>
+        </tr>
+    </thead>
+</table>
+<br><br><br>
+<h3>Remover produto cadastrado</h3>
+<label style="font-size: 15px;">Selecione o produto: </label>
+<br>
+<select class="form-control" id="Section-Prod" style="width: 25%;" id="SelectProdutos">
+    <option value="">Produto 1</option>
+    <option value="">Produto 2</option>
+</select>
+<button style="margin-left: 8px;" class="btn btn-large btn-primary" type="submit" onclick="Mostrar()" id="RemoverProd">Remover</button>
