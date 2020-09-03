@@ -850,7 +850,8 @@ img {
 
 .msg-cadastro {
     width: 350px;
-    height: 40px;
+    padding: 15x;
+    height: 30px;
     max-height: 50px;
     margin-top: 2rem;
     align-items: center;

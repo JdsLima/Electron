@@ -36,7 +36,8 @@ function CadProd() {
         };
         var ProdutosObjectStore = db.transaction("Produtos", "readwrite").objectStore("Produtos");
         ProdutosObjectStore.add({ Produto: nomeProduto, ValorDeCompra: valCompra, ValorDeVenda: valVenda, Porcentagem: Percent });
-        msg.innerHTML = <label class="msg-cadastro">Produto cadastrado com sucesso!!</label>;
+        var label = "<label class='msg-cadastro'>Produto cadastrado com sucesso!!</label>"
+        msg.innerHTML = label;
     }
 };
 
