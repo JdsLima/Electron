@@ -6,7 +6,7 @@
   <meta name="description" content="Sistema para sorveteria">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="Jadson Lima">
-  <link rel="stylesheet" href="css/photon.css">
+  <link rel="stylesheet" href="css/base.css">
   <!-- funçoes para alternar entre paineis sem recarregar td a página html -->
   <script src="javascript/angularMin.js"></script>
   <script src="javascript/angular-router.js"></script>
@@ -15,6 +15,7 @@
   <script>window.$ = window.jQuery = require('jquery');</script>
   <script src="javascript/jquery.mask.min.js"></script>
   <script src="javascript/scripts.js"></script>
+  <script src="./.db/config.js"></script>
   <script src="./.db/server.js"></script>
 </head>
 
@@ -39,8 +40,8 @@
           <img class="logo" draggable="false" src="docs/assets/img/Logo/Logo.png">
         </div>
         <div class="dropdown" style="float: right;">
-          <button class="btn btn-options" style="color: cornsilk;" id="Opções">
-            <img class="media-object" src="docs/assets/img/menu.png" width="30" height="25">
+          <button class="btn btn-options" id="Opções">
+            <span class="icon icon-menu" style="color: white;"></span>
           </button>
           <div class="dropdown-content">
             <a href="#"><span class="icon icon-cog"></span> Preferências</a>
@@ -55,8 +56,8 @@
         <div class="pane-sm sidebar">
           <nav class="nav-group">
             <h5 class="nav-group-title"></h5>
-            <span class="user-photo">
-              <img class="img-circle media-object" src="docs/assets/img/avatar3.jpg" width="100" height="100">
+            <span class="user-photo" draggable="false">
+              <img class="img-circle media-object" draggable="false" src="docs/assets/img/avatar3.jpg" width="100" height="100">
             </span>
             <span class="nav-group-item" style="text-align: center; padding: 10px;">
               <span id="user-name" class="user-name">User name</span>

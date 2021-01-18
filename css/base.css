@@ -663,6 +663,7 @@ h6 {
 }
 
 .toolbar-actions {
+    height: 40px;
     margin-top: 4px;
     margin-bottom: 4px;
     padding-right: 3px;

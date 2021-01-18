@@ -41,6 +41,7 @@ function Maximizar(){
 function Sair() {
     const app = require('electron').remote.app;
     const { remote } = require('electron');
-    var r = confirm("VOCÊ DESEJA SAIR?");
-    if (r == true) { remote.BrowserWindow.getFocusedWindow().close(); }
+    remote.BrowserWindow.getFocusedWindow().close();
+    // var r = confirm("VOCÊ DESEJA SAIR?");
+    // if (r == true) { remote.BrowserWindow.getFocusedWindow().close(); }
 }

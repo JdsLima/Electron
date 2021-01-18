@@ -9,9 +9,10 @@ require('electron-reload')(__dirname, {
 function createWindow() {
   // Cria uma janela de navegação.
   let win = new BrowserWindow({frame: false, width: 1080, height: 720,
-    icon: "docs/assets/img/Logo/Logo.jpeg",
+    icon: "docs/assets/img/Logo/Logo.png",
     webPreferences: {
       nodeIntegration: true,
+      contextIsolation: false,
       enableRemoteModule: true
     }
   })
