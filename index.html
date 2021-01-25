@@ -15,6 +15,7 @@
   <script>window.$ = window.jQuery = require('jquery');</script>
   <script src="javascript/jquery.mask.min.js"></script>
   <script src="javascript/scripts.js"></script>
+  <script src="javascript/dropdown.js"></script>
   <script src="./.db/config.js"></script>
   <script src="./.db/server.js"></script>
 </head>
@@ -39,11 +40,11 @@
         <div style="float: left;">
           <img class="logo" draggable="false" src="docs/assets/img/Logo/Logo.png">
         </div>
-        <div class="dropdown" style="float: right;">
-          <button class="btn btn-options" id="Opções">
+        <div class="dropdown">
+          <button class="dropbtn" id="Opções" onclick="myFunction()">
             <span class="icon icon-menu" style="color: white;"></span>
           </button>
-          <div class="dropdown-content">
+          <div class="dropdown-content" id="myDropdown">
             <a href="#"><span class="icon icon-cog"></span> Preferências</a>
             <a class="btn-sair" style="border-top-left-radius: 0px;" onclick="Sair()">Sair com
               segurança</a>

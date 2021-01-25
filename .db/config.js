@@ -12,3 +12,9 @@ request.onsuccess = event => {
     console.log("Configurações abertas com sucesso.");
     db = event.target.result;
 }
+
+function defWindow () {
+ // adicionar as configuraçoes de janela
+    const app = require('electron').remote.app;
+    const { remote } = require('electron');
+}
